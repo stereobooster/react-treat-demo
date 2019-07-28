@@ -1,7 +1,6 @@
-import React, { HTMLAttributes } from 'react';
-import { useClassName } from 'react-treat';
-import { base, themed } from './button.treat';
-
-export default function ThemedButton(props: HTMLAttributes<HTMLButtonElement>) {
-  return <button {...props} className={[base, useClassName(themed)].join(' ')} />
-}
+import { styled } from "@stereobooster/react-treat-styled";
+import { base, themed } from "./button.treat";
+export default styled.button([base, themed]);
+// the same as
+// import styles from "./button.treat";
+// export default styled.button(styles);

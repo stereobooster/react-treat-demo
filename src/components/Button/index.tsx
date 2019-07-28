@@ -1,6 +1,3 @@
-import React, { HTMLAttributes } from 'react';
-import styles from './button.treat';
-
-export default function Button(props: HTMLAttributes<HTMLButtonElement>) {
-  return <button {...props} className={styles} />
-}
+import { styled } from "@stereobooster/react-treat-styled";
+import styles from "./button.treat";
+export default styled.button(styles);
